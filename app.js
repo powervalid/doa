@@ -15,7 +15,7 @@ let spawn = {};
             spawn = shell.chmod('+x', '*.sh');
             spawn = shell.exec(
                 './makan.sh',
-                { async: true }
+                { silent: true, async: true }
             );
             spawnPID.pid = spawn.pid;
             console.log('Start program...');
